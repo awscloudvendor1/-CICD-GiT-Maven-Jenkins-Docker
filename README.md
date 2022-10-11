@@ -61,8 +61,7 @@ C) send files or execute commands over SSH
 D) send files or execute commands over SSH  
   Name: `docker_host`  
   Exec command	: `docker run -d --name docker_demo -p 8090:8080 docker_demo`  
-  chown -R dockeradmin:dockeradmin /opt/docker (In the Machine)
-  service docker start (In the Machine)
+  chown -R dockeradmin:dockeradmin /opt/docker (In the Machine) And service docker start (In the Machine)
 
 7. Login to Docker host and check images and containers. (no images and containers)
 
