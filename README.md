@@ -37,7 +37,7 @@ Manage Jenkins --> Configure system -->  Publish over SSH --> add Docker server 
 6. Create Jenkins job 
 
 A) Source Code Management  
- Repository : https://github.com/khalid-kifayat/CICD-GiT-Maven-Jenkins-Docker.git
+ Repository : https://github.com/awscloudvendor1/-CICD-GiT-Maven-Jenkins-Docker.git
  Branches to build : */main  
 
 B) Build
@@ -61,6 +61,8 @@ C) send files or execute commands over SSH
 D) send files or execute commands over SSH  
   Name: `docker_host`  
   Exec command	: `docker run -d --name docker_demo -p 8090:8080 docker_demo`  
+  chown -R dockeradmin:dockeradmin /opt/docker (In the Machine)
+  service docker start (In the Machine)
 
 7. Login to Docker host and check images and containers. (no images and containers)
 
